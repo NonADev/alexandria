@@ -16,3 +16,4 @@ margin_left = 96.0
 margin_top = 352.0
 margin_right = 928.0
 margin_bottom = 560.0
+dialog = [ "teste1" ]

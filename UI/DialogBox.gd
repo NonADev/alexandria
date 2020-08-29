@@ -1,10 +1,6 @@
 extends Control
 
-export(Array, String) var dialog = [
-	'Hello thu hathere, this is a text for you readhu hathere, this is a text for you readhu hathere, this is a text for you readhu hathere, this is a text for you readhu hathere, this is a text for you readhu hathere, this is a text for you readhu hathere, this is a text for you readhu hathere, this is a text for you read.',
-	'If you have died, please, right door, otherwise, go ahead.',
-	'You dont know? ok, go back.'
-]
+export(Array, String) var dialog = []
 onready var richTextLabel = $Frente/RichTextLabel
 onready var nextIndicator = $Frente/NextIndicator
 onready var tween = $Tween
@@ -12,7 +8,11 @@ var dialog_index = 0
 signal dialog_ended
 
 func _ready():
-	load_dialog()
+	if dialog.size() == 0:
+		push_error("Dialog null")
+		get_tree().quit()
+	else:
+		load_dialog()
 
 
 func _process(delta):
