@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/next-indicator.png-d1135e6edfd8a0693853023bae5360c2.stex"
+path="res://.import/mescladas.png-14e894528a6b60006999d69117b8a4a8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/DialogItems/next-indicator.png"
-dest_files=[ "res://.import/next-indicator.png-d1135e6edfd8a0693853023bae5360c2.stex" ]
+source_file="res://Resources/mescladas.png"
+dest_files=[ "res://.import/mescladas.png-14e894528a6b60006999d69117b8a4a8.stex" ]
 
 [params]
 
