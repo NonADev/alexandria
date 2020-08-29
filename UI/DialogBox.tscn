@@ -39,6 +39,7 @@ tracks/1/keys = {
 }
 
 [node name="DialogBox" type="Control"]
+visible = false
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -90,10 +91,6 @@ margin_bottom = 0.0160065
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0.054902, 0.027451, 0.027451, 1 )
 bbcode_enabled = true
-bbcode_text = "Hello There people, this dialog is a placeholder.
-"
-text = "Hello There people, this dialog is a placeholder.
-"
 __meta__ = {
 "_edit_use_anchors_": false
 }

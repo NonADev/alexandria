@@ -5,9 +5,13 @@ onready var richTextLabel = $Frente/RichTextLabel
 onready var nextIndicator = $Frente/NextIndicator
 onready var tween = $Tween
 var dialog_index = 0
+signal dialog_started
 signal dialog_ended
 
-func _ready():
+
+func start_dialog():
+	emit_signal("dialog_started")
+	visible = true
 	if dialog.size() == 0:
 		push_error("Dialog null")
 		get_tree().quit()
@@ -15,7 +19,7 @@ func _ready():
 		load_dialog()
 
 
-func _process(delta):
+func _process(_delta):
 	if richTextLabel.percent_visible==1 && Input.is_action_just_pressed("ui_accept"):
 		load_dialog()
 
@@ -33,9 +37,9 @@ func load_dialog():
 	dialog_index += 1
 
 
-func _on_Tween_tween_completed(object, key):
+func _on_Tween_tween_completed(_object, _key):
 	nextIndicator.visible = true
 
 
-func _on_Tween_tween_started(object, key):
+func _on_Tween_tween_started(_object, _key):
 	nextIndicator.visible = false
