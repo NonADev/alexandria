@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/light frame 07.png-9a0d2879ed1ddc44a40120330db8d004.stex"
+path="res://.import/mani-idle-run.png-4d90a304ef124a886b8aaa4ea23bedef.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/DialogItems/light frame 07.png"
-dest_files=[ "res://.import/light frame 07.png-9a0d2879ed1ddc44a40120330db8d004.stex" ]
+source_file="res://Resources/Player/mani-idle-run.png"
+dest_files=[ "res://.import/mani-idle-run.png-4d90a304ef124a886b8aaa4ea23bedef.stex" ]
 
 [params]
 

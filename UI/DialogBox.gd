@@ -1,6 +1,6 @@
 extends Control
 
-export(Array, String) var dialog = []
+export(Array, String) var dialog = [""]
 onready var richTextLabel = $Frente/RichTextLabel
 onready var nextIndicator = $Frente/NextIndicator
 onready var tween = $Tween

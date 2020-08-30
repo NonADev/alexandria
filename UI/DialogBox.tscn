@@ -40,38 +40,39 @@ tracks/1/keys = {
 
 [node name="DialogBox" type="Control"]
 visible = false
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -416.0
-margin_top = -232.0
-margin_right = 416.0
-margin_bottom = -24.0
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_horizontal_guides_": [ 368.0, 576.0, 384.0, 560.0, 400.0, 544.0 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 96.0, 928.0, 128.0, 896.0, 176.0, 800.0, 832.0 ]
 }
 
 [node name="Fundo" type="TextureRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.094
+anchor_top = 0.613
+anchor_right = 0.906
+anchor_bottom = 0.96
+margin_left = -0.256004
+margin_top = 0.199982
+margin_right = 0.255981
 texture = ExtResource( 5 )
 expand = true
 stretch_mode = 1
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
 
 [node name="Frente" type="TextureRect" parent="."]
-anchor_left = 0.038
-anchor_top = 0.077
-anchor_right = 0.962
-anchor_bottom = 0.923
-margin_left = 0.383999
-margin_top = -0.0160007
-margin_right = -0.384033
-margin_bottom = 0.0159912
+anchor_left = 0.125
+anchor_top = 0.64
+anchor_right = 0.875
+anchor_bottom = 0.933
+margin_top = -3.05176e-05
+margin_right = -6.10352e-05
+margin_bottom = 0.200012
 texture = ExtResource( 3 )
 expand = true
 stretch_mode = 1
@@ -91,6 +92,8 @@ margin_bottom = 0.0160065
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0.054902, 0.027451, 0.027451, 1 )
 bbcode_enabled = true
+bbcode_text = "Place Holder"
+text = "Place Holder"
 __meta__ = {
 "_edit_use_anchors_": false
 }
