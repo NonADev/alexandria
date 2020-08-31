@@ -1,6 +1,9 @@
 extends StaticBody2D
 
 
+#export(Array, String) var textFromBook = []
+
+
 func readBook():
 	var instanceDialog = load("res://UI/DialogBox.tscn").instance()
 	instanceDialog.dialog = ["primeira frase", "segunda fase"]

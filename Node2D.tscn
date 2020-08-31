@@ -28,7 +28,7 @@ position = Vector2( 7.74338, -0.0936737 )
 shape = SubResource( 1 )
 
 [node name="Book" parent="Node2D" instance=ExtResource( 2 )]
-position = Vector2( 203, 54 )
+position = Vector2( 101, 50 )
 collision_layer = 5
 [connection signal="body_entered" from="Node2D/Player/Area2D" to="Node2D/Player" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Node2D/Player/Area2D" to="Node2D/Player" method="_on_Area2D_body_exited"]

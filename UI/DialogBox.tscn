@@ -99,14 +99,19 @@ __meta__ = {
 }
 
 [node name="NextIndicator" type="TextureRect" parent="Frente"]
-margin_left = 704.0
-margin_top = 116.0
-margin_right = 728.0
-margin_bottom = 140.0
+anchor_left = 0.93216
+anchor_top = -0.515
+anchor_right = 0.966
+anchor_bottom = -0.387353
+margin_left = -3.83997
+margin_top = 104.391
+margin_right = -0.0831604
+margin_bottom = 110.901
 texture = ExtResource( 4 )
 expand = true
+stretch_mode = 6
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": true
 }
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="Frente/NextIndicator"]
