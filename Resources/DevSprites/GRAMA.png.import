@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mani-idle-run.png-d363d96b84253132b0f42dc46be5aacd.stex"
+path="res://.import/GRAMA.png-ef34d717a308a9c33d958202bdd1caa7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/DevSprites/mani-idle-run.png"
-dest_files=[ "res://.import/mani-idle-run.png-d363d96b84253132b0f42dc46be5aacd.stex" ]
+source_file="res://Resources/DevSprites/GRAMA.png"
+dest_files=[ "res://.import/GRAMA.png-ef34d717a308a9c33d958202bdd1caa7.stex" ]
 
 [params]
 

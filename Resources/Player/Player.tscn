@@ -5,32 +5,31 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 13.1432
-height = 25.8408
+height = 27.7136
 
-[sub_resource type="CapsuleShape2D" id=3]
-radius = 6.94596
-height = 38.2353
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 26 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 14, 52 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )
 region = Rect2( 14, 0, 14, 52 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 1 )
 region = Rect2( 28, 0, 14, 52 )
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ SubResource( 4 ) ],
+"frames": [ SubResource( 3 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 5 ), SubResource( 6 ) ],
+"frames": [ SubResource( 4 ), SubResource( 5 ) ],
 "loop": true,
 "name": "Run",
 "speed": 5.0
@@ -50,14 +49,11 @@ collision_mask = 4
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 2 )
-animation = "Run"
-frame = 1
-playing = true
+frames = SubResource( 6 )
+animation = "Idle"
 flip_h = true
 [connection signal="body_entered" from="InteractionArea" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="InteractionArea" to="." method="_on_Area2D_body_exited"]
