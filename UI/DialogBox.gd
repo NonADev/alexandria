@@ -3,10 +3,11 @@ extends Control
 export(Array, String) var dialog = [""]
 onready var richTextLabel = $Frente/RichTextLabel
 onready var nextIndicator = $Frente/NextIndicator
+onready var animationPlayer = $Frente/NextIndicator/AnimationPlayer
 onready var tween = $Tween
-var dialog_index = 0
 signal dialog_started
 signal dialog_ended
+var dialog_index = 0
 
 
 func start_dialog():

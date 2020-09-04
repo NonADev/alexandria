@@ -23,7 +23,6 @@ func _physics_process(delta):
 				animatedSprite.play("Idle")
 		DIALOG:
 			dialog_state(delta)
-	print(is_on_floor())
 	motion = move_and_slide(motion, UP)
 
 
@@ -70,5 +69,5 @@ func _on_Area2D_body_entered(body):
 		dialogBody = body
 
 
-func _on_Area2D_body_exited(body):
+func _on_Area2D_body_exited(_body):
 	dialogBody = null

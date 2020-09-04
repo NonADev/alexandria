@@ -7,11 +7,12 @@
 [ext_resource path="res://Resources/DialogItems/light frame 09.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 30
+size = 24
 font_data = ExtResource( 2 )
 
 [sub_resource type="Animation" id=2]
-resource_name = "Idle"
+resource_name = "Animation"
+length = 2.0
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:margin_top")
@@ -20,10 +21,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 106, 116 ]
+"values": [ 31.8, 55.8 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:margin_bottom")
@@ -32,21 +33,18 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 130, 140 ]
+"values": [ -34.44, -10.44 ]
 }
 
 [node name="DialogBox" type="Control"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 368.0, 576.0, 384.0, 560.0, 400.0, 544.0 ],
-"_edit_use_anchors_": false,
-"_edit_vertical_guides_": [ 96.0, 928.0, 128.0, 896.0, 176.0, 800.0, 832.0 ]
+"_edit_use_anchors_": false
 }
 
 [node name="Fundo" type="TextureRect" parent="."]
@@ -99,24 +97,22 @@ __meta__ = {
 }
 
 [node name="NextIndicator" type="TextureRect" parent="Frente"]
-anchor_left = 0.93216
-anchor_top = -0.515
-anchor_right = 0.966
-anchor_bottom = -0.387353
-margin_left = -3.83997
-margin_top = 104.391
-margin_right = -0.0831604
-margin_bottom = 110.901
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -22.9999
+margin_top = 56.0
+margin_right = -7.99994
+margin_bottom = -14.2401
 texture = ExtResource( 4 )
-expand = true
-stretch_mode = 6
+stretch_mode = 7
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="Frente/NextIndicator"]
-autoplay = "Idle"
-anims/Idle = SubResource( 2 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Frente/NextIndicator"]
+autoplay = "Animation"
+anims/Animation = SubResource( 2 )
 
 [node name="Tween" type="Tween" parent="."]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
