@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 onready var animatedSprite = $AnimatedSprite
 const UP = Vector2(0, -1)
-const MAX_SPEED = 120
+const MAX_SPEED = 150
 const ACCELERATION = 500
 const FRICTION = 600
 var motion = Vector2.ZERO
@@ -35,9 +35,9 @@ func move_state(delta):
 		motion.y += 15
 	
 	if motion.x>0:
-		animatedSprite.flip_h = true
-	elif motion.x < 0:
 		animatedSprite.flip_h = false
+	elif motion.x < 0:
+		animatedSprite.flip_h = true
 		
 	if input_vector != Vector2.ZERO:
 		animatedSprite.play("Run")

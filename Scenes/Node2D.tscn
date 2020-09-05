@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Resources/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Resources/Props/Book.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Resources/DevSprites/GRAMA.png" type="Texture" id=3]
+[ext_resource path="res://Resources/DevSprites/porta da serpente.png" type="Texture" id=4]
+[ext_resource path="res://Resources/Aseprite/door.png" type="Texture" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -112,11 +114,18 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
 [node name="Node2D" type="YSort" parent="."]
 
+[node name="porta da serpente" type="Sprite" parent="Node2D"]
+position = Vector2( 246, -146 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+vframes = 2
+
 [node name="Player" parent="Node2D" instance=ExtResource( 1 )]
-position = Vector2( 75, 102 )
+position = Vector2( 156, -22 )
 collision_mask = 1
 
 [node name="Camera2D" type="Camera2D" parent="Node2D/Player"]
+position = Vector2( 0, -46 )
 current = true
 
 [node name="Book" parent="Node2D" instance=ExtResource( 2 )]
@@ -128,3 +137,7 @@ textFromBook = [ "primeira frase", "segunda fase", "terceira frase" ]
 tile_set = SubResource( 4 )
 format = 1
 tile_data = PoolIntArray( 65536, 4, 0, 65537, 4, 0, 65538, 4, 0, 65539, 4, 0, 65540, 4, 0, 65541, 4, 0, 65542, 4, 0, 65543, 4, 0, 65544, 4, 0, 65545, 1, 0, 65546, 3, 0, 131072, 3, 0, 131073, 3, 0, 131074, 3, 0, 131075, 3, 0, 131076, 3, 0, 131077, 3, 0, 131078, 3, 0, 131079, 3, 0, 131080, 3, 0, 131081, 3, 0, 196608, 2, 0, 196609, 2, 0, 196610, 2, 0, 196611, 2, 0, 196612, 2, 0, 196613, 2, 0, 196614, 2, 0, 196615, 2, 0, 196616, 2, 0, 196617, 2, 0, 262144, 2, 0, 262145, 2, 0, 262146, 2, 0, 262147, 2, 0, 262148, 2, 0, 262149, 2, 0, 262150, 2, 0, 262151, 2, 0, 262152, 2, 0, 262153, 2, 0 )
+
+[node name="door" type="Sprite" parent="."]
+position = Vector2( -93, 79 )
+texture = ExtResource( 5 )
