@@ -23,6 +23,9 @@ func _physics_process(delta):
 				animatedSprite.play("Idle")
 		DIALOG:
 			dialog_state(delta)
+			
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().quit()
 	motion = move_and_slide(motion, UP)
 
 

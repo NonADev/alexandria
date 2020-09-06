@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/output-onlinepngtools (2).png-653019b2d5768ee11d2792332abe2a9e.stex"
+path="res://.import/chao teste.png-7890687bf821d2a9789eaf3e438dafdb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Art/output-onlinepngtools (2).png"
-dest_files=[ "res://.import/output-onlinepngtools (2).png-653019b2d5768ee11d2792332abe2a9e.stex" ]
+source_file="res://Resources/DevSprites/chao teste.png"
+dest_files=[ "res://.import/chao teste.png-7890687bf821d2a9789eaf3e438dafdb.stex" ]
 
 [params]
 
