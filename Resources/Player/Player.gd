@@ -34,8 +34,8 @@ func move_state(delta):
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector = input_vector.normalized()
 	
-	if motion.y < 450:
-		motion.y += 15
+	#if motion.y < 450:
+	#	motion.y += 15
 	
 	if motion.x>0:
 		animatedSprite.flip_h = false
@@ -67,10 +67,10 @@ func _on_dialogBox_ended():
 	state = MOVE
 
 
-func _on_Area2D_body_entered(body):
-	if body.has_method("readBook"):
-		dialogBody = body
+func _on_InteractionArea_area_entered(area):
+	if area.has_method("readBook"):
+		dialogBody = area
 
 
-func _on_Area2D_body_exited(_body):
+func _on_InteractionArea_area_exited(area):
 	dialogBody = null

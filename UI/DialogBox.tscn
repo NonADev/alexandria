@@ -7,11 +7,11 @@
 [ext_resource path="res://Resources/DialogItems/light frame 09.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 42
+size = 26
 font_data = ExtResource( 2 )
 
 [sub_resource type="Animation" id=2]
-resource_name = "Animation"
+resource_name = "Toggle"
 length = 2.0
 loop = true
 tracks/0/type = "value"
@@ -24,7 +24,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 80.0, 137.0 ]
+"values": [ 43.2, 66.2 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:margin_bottom")
@@ -36,7 +36,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ -75.3001, -18.3001 ]
+"values": [ -30.76, -7.76001 ]
 }
 
 [node name="DialogBox" type="Control"]
@@ -100,10 +100,10 @@ __meta__ = {
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -73.9999
-margin_top = 80.0
-margin_right = -23.9999
-margin_bottom = -75.3001
+margin_left = -35.9999
+margin_top = 66.2
+margin_right = -15.9999
+margin_bottom = -7.76001
 texture = ExtResource( 4 )
 stretch_mode = 1
 __meta__ = {
@@ -111,8 +111,8 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Frente/NextIndicator"]
-autoplay = "Animation"
-anims/Animation = SubResource( 2 )
+autoplay = "Toggle"
+anims/Toggle = SubResource( 2 )
 
 [node name="Tween" type="Tween" parent="."]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]

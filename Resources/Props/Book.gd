@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends Area2D
 
 
 export(Array, String) var textFromBook = ["primeira frase", "segunda fase"]
