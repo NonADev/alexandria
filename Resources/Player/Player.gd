@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 onready var animatedSprite = $AnimatedSprite
 const UP = Vector2(0, -1)
-const MAX_SPEED = 150
+const MAX_SPEED = 80
 const ACCELERATION = 500
 const FRICTION = 600
 var motion = Vector2.ZERO
@@ -72,5 +72,5 @@ func _on_InteractionArea_area_entered(area):
 		dialogBody = area
 
 
-func _on_InteractionArea_area_exited(area):
+func _on_InteractionArea_area_exited(_area):
 	dialogBody = null
