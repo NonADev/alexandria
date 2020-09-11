@@ -20,13 +20,13 @@ run/main_scene="res://Scenes/PortaEntrada.tscn"
 
 [display]
 
-window/size/width=680
-window/size/height=320
+window/size/width=768
+window/size/height=512
 window/size/fullscreen=true
 window/size/test_width=1600
-window/size/test_height=700
+window/size/test_height=900
 window/stretch/mode="2d"
-window/stretch/aspect="keep_height"
+window/stretch/aspect="keep"
 
 [importer_defaults]
 
@@ -90,9 +90,5 @@ ui_down={
 
 [rendering]
 
-quality/2d/use_nvidia_rect_flicker_workaround=true
-quality/intended_usage/framebuffer_allocation=0
-quality/intended_usage/framebuffer_allocation.mobile=0
 quality/2d/use_pixel_snap=true
-environment/default_clear_color=Color( 0.0235294, 0.329412, 0.27451, 1 )
 environment/default_environment="res://default_env.tres"
