@@ -33,12 +33,13 @@ func _physics_process(delta):
 func move_state(delta):
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-		
+	
 	if input_vector != Vector2.ZERO:
-		#animatedSprite.play("Run")
+		animatedSprite.flip_h = input_vector.x > 0
+		animatedSprite.play("Run")
 		motion = motion.move_toward(input_vector * MAX_SPEED, delta * ACCELERATION)
 	else:
-		#animatedSprite.play("Idle")
+		animatedSprite.play("Idle")
 		motion = motion.move_toward(Vector2.ZERO, delta * FRICTION)
 	
 	if motion.x>0:

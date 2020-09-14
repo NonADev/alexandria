@@ -20,8 +20,8 @@ run/main_scene="res://Scenes/PortaEntrada.tscn"
 
 [display]
 
-window/size/width=768
-window/size/height=512
+window/size/width=800
+window/size/height=450
 window/size/fullscreen=true
 window/size/test_width=1600
 window/size/test_height=900
